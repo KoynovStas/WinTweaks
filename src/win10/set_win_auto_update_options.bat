@@ -67,7 +67,7 @@ set HKLM_AU=HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU
 set HKLM_SERVICES=HKLM\SYSTEM\CurrentControlSet\Services
 
 NET STOP wuauserv
-REG DELETE "%HKLM_AU%" /f >nul
+REG DELETE "%HKLM_AU%" /f >nul 2>nul
 
 
 ::If Enable AutoUpdate
