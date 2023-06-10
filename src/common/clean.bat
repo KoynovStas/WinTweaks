@@ -75,6 +75,8 @@ set list=%list% "%userprofile%\Local Settings\History"
 set list=%list% "%userprofile%\Local Settings\Temporary Internet Files"
 set list=%list% "%LocalAppData%\Microsoft\Windows\WebCache"
 set list=%list% "%LocalAppData%\Microsoft\Windows\History"
+set list=%list% "%ProgramData%\Microsoft\Diagnosis\ETLLogs\AutoLogger"
+
 
 for %%s in (%list%) do (
     DEL /f /s /q %%s\*.* >nul 2>&1
