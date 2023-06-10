@@ -133,14 +133,14 @@ echo:
 
 for %%s in (%list%) do (
     echo --- Disable service %%s:
-	sc stop %%s
+    sc stop %%s
 
-	REG QUERY "%HKLM_SERVICES%\%%s" /v "Start" >nul
-	if %errorlevel% EQU 0 ( rem Service is exist!
-	    REG ADD "%HKLM_SERVICES%\%%s" /v "Start" /t REG_DWORD /d 4 /f
-	)
+    REG QUERY "%HKLM_SERVICES%\%%s" /v "Start" >nul 2>nul
+    if !errorlevel! EQU 0 ( rem Service is exist!
+        REG ADD "%HKLM_SERVICES%\%%s" /v "Start" /t REG_DWORD /d 4 /f
+    )
 
-   echo:
+    echo:
 )
 
 
