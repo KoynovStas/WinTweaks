@@ -96,14 +96,33 @@ set list=%list% WwanSvc
 set list=%list% WSearch
 
 
+set HKLM_SERVICES=HKLM\SYSTEM\CurrentControlSet\Services
+
 echo ---- Disable services ----
 echo:
 
+
+:: Windows has a number of restrictions (protection) for managing some services.
+:: Even using ADMINISTRATOR or even SYSTEM rights does not allow you to disable
+:: some services (such as UsoSvc) through the sc config command.
+:: BUT we can disable the service through the registry!
+:: 0 = Boot
+:: 1 = System
+:: 2 = Automatic
+:: 3 = Manual
+:: 4 = Disabled
+:: 5 and more = Unknown
+
 for %%s in (%list%) do (
-   echo --- Disable service %%s:
-   sc stop %%s
-   sc config %%s start= disabled
-echo:
+    echo --- Disable service %%s:
+	sc stop %%s
+
+	REG QUERY "%HKLM_SERVICES%\%%s" /v "Start" >nul
+	if %errorlevel% EQU 0 ( rem Service is exist!
+	    REG ADD "%HKLM_SERVICES%\%%s" /v "Start" /t REG_DWORD /d 4 /f
+	)
+
+   echo:
 )
 
 
