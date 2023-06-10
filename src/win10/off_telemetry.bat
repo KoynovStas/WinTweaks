@@ -35,10 +35,15 @@ REG ADD "%HKCU_CUR_VER%\Search"            /v "BingSearchEnabled"   /t REG_DWORD
 REG ADD "%HKCU_CUR_VER%\AdvertisingInfo"   /v "Enabled"             /t REG_DWORD /d 0 /f
 REG ADD "%HKCU_CUR_VER%\AdvertisingInfo"   /v "Enabled"             /t REG_DWORD /d 0 /f
 
+
+:: Before we can work with the COMPONENTS tree, we must load it!
+REG LOAD HKLM\COMPONENTS %windir%\System32\config\components
 REG ADD "%HKLM_CORTANA%" /v "f!proactive-telemetry-inter_58073761d33f144b" /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_CORTANA%" /v "f!proactive-telemetry-event_8ac43a41e5030538" /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_CORTANA%" /v "f!proactive-telemetry.js"                     /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_CORTANA%" /v "f!dss-winrt-telemetry.js"                     /t REG_DWORD /d 0 /f
+REG UNLOAD HKLM\COMPONENTS
+
 
 REG ADD "HKCU\SOFTWARE\Microsoft\Personalization\Settings" /v "AcceptedPrivacyPolicy" /t REG_DWORD /d 0 /f
 
