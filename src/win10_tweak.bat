@@ -17,28 +17,25 @@ echo:
 
 CALL %COMMON_DIR%\auto_chcp_UTF8.bat
 CALL %COMMON_DIR%\off_uac.bat
-CALL %COMMON_DIR%\ssd_tweak.bat
-CALL %COMMON_DIR%\off_hibernate.bat
-CALL %COMMON_DIR%\power_config.bat
-CALL %COMMON_DIR%\desktop_tweak.bat
 CALL %COMMON_DIR%\off_autoplay.bat
-CALL %COMMON_DIR%\on_mute_mode.bat Win10
+CALL %COMMON_DIR%\off_hibernate.bat
+CALL %COMMON_DIR%\desktop_tweak.bat
+CALL %COMMON_DIR%\power_config.bat
 CALL %COMMON_DIR%\set_pc_name.bat
+CALL %COMMON_DIR%\on_mute_mode.bat Win10
 CALL %COMMON_DIR%\set_explorer_config.bat
 CALL %COMMON_DIR%\set_keyboard_config.bat
-
-CALL %WIN10_DIR%\set_big_ico_on_control_panel.bat
-CALL %WIN10_DIR%\set_visual_effects.bat
-CALL %WIN10_DIR%\off_services.bat
-CALL %WIN10_DIR%\delete_components.bat
-
-CALL %COMMON_DIR%\off_log.bat
-CALL %COMMON_DIR%\off_tasks.bat
-CALL %COMMON_DIR%\off_ex_services.bat
 CALL %COMMON_DIR%\off_skype_telemetry.bat
-CALL %COMMON_DIR%\del_search_indexes.bat
+CALL %COMMON_DIR%\off_ex_services.bat
+CALL %COMMON_DIR%\off_tasks.bat
+CALL %COMMON_DIR%\off_log.bat
+CALL %COMMON_DIR%\ssd_tweak.bat
+
 
 CALL %WIN10_DIR%\set_win_auto_update_options.bat -1
+CALL %WIN10_DIR%\set_big_ico_on_control_panel.bat
+CALL %WIN10_DIR%\set_visual_effects.bat
+CALL %WIN10_DIR%\delete_components.bat
 CALL %WIN10_DIR%\start_menu_config.bat
 CALL %WIN10_DIR%\privacy_config.bat
 CALL %WIN10_DIR%\no_repair_after_update.bat
@@ -49,11 +46,13 @@ CALL %WIN10_DIR%\off_notification_center.bat
 CALL %WIN10_DIR%\off_remote_assistance.bat
 CALL %WIN10_DIR%\off_beta_features.bat
 CALL %WIN10_DIR%\off_telemetry.bat
+CALL %WIN10_DIR%\off_services.bat
 CALL %WIN10_DIR%\off_policies.bat
 CALL %WIN10_DIR%\off_spynet.bat
 CALL %WIN10_DIR%\off_sync.bat
 
 
+CALL %COMMON_DIR%\del_search_indexes.bat
 CALL %COMMON_DIR%\clean.bat
 
 
