@@ -33,6 +33,7 @@ CALL %WIN7_DIR%\start_menu_config.bat
 CALL %WIN7_DIR%\off_services.bat
 CALL %WIN7_DIR%\delete_components.bat
 
+CALL %COMMON_DIR%\off_log.bat
 CALL %COMMON_DIR%\off_tasks.bat
 CALL %COMMON_DIR%\off_ex_services.bat
 CALL %COMMON_DIR%\off_skype_telemetry.bat
