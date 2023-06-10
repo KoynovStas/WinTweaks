@@ -5,7 +5,7 @@
 
 :: --- Services ---
 :: for show all services run: sc query type= service state= all
-SETLOCAL
+SETLOCAL enableDelayedExpansion
 
 set list=AJRouter
 set list=%list% ALG

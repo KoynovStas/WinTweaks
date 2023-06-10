@@ -4,7 +4,7 @@
 
 :: --- Services ---
 :: for show all services run: sc query type= service state= all
-SETLOCAL
+SETLOCAL enableDelayedExpansion
 set list=ALG
 set list=%list% AppIDSvc
 set list=%list% Appinfo
