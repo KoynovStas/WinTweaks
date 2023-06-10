@@ -12,7 +12,7 @@ set HKLM_CUR_VER=HKLM\Software\Microsoft\Windows\CurrentVersion
 echo Remove Telemetry:
 
 
-REG DELETE "%HKCU_CUR_VER%\AdvertisingInfo" /v "Id" /f
+REG DELETE "%HKCU_CUR_VER%\AdvertisingInfo" /v "Id" /f >nul
 
 REG ADD "%HKLM_MS_WIN_APP_EXP%/Steps-Recorder"                                                     /v "Enabled" /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_MS_WIN_APP_EXP%/Program-Telemetry"                                                  /v "Enabled" /t REG_DWORD /d 0 /f
