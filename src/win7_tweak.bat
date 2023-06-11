@@ -29,6 +29,7 @@ CALL %COMMON_DIR%\off_skype_telemetry.bat
 CALL %COMMON_DIR%\off_ex_services.bat
 CALL %COMMON_DIR%\off_tasks.bat
 CALL %COMMON_DIR%\off_log.bat
+CALL %COMMON_DIR%\ie_tweak.bat
 CALL %COMMON_DIR%\ssd_tweak.bat
 
 
