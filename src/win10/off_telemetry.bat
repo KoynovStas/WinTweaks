@@ -23,16 +23,13 @@ REG ADD "%HKLM_MS_WIN_APP_EXP%/Program-Compatibility-Assistant/Compatibility-Inf
 REG ADD "%HKLM_MS_WIN_APP_EXP%/Program-Compatibility-Assistant/Analytic"                           /v "Enabled" /t REG_DWORD /d 0 /f 
 REG ADD "%HKLM_MS_WIN_APP_EXP%/Program-Compatibility-Assistant"                                    /v "Enabled" /t REG_DWORD /d 0 /f 
 
-REG ADD "%HKLM_CUR_VER%\Policies\DataCollection" /v "AllowTelemetry"                 /t REG_DWORD /d 0 /f
+REG ADD "%HKLM_CUR_VER%\Policies\DataCollection" /v AllowTelemetry                   /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_CUR_VER%\Device Metadata"         /v PreventDeviceMetadataFromNetwork /t REG_DWORD /d 1 /f
-REG ADD "%HKLM_CUR_VER%\Device Metadata"         /v PreventDeviceMetadataFromNetwork /t REG_DWORD /d 1 /f
-REG ADD "%HKLM_CUR_VER%\Policies\DataCollection" /v "AllowTelemetry"                 /t REG_DWORD /d 0 /f
-REG ADD "%HKLM_CUR_VER%\AdvertisingInfo"         /v "Enabled"                        /t REG_DWORD /d 0 /f
+REG ADD "%HKLM_CUR_VER%\AdvertisingInfo"         /v Enabled                          /t REG_DWORD /d 0 /f
 
 REG ADD "%HKCU_CUR_VER%\Search"            /v "CortanaEnabled"      /t REG_DWORD /d 0 /f
 REG ADD "%HKCU_CUR_VER%\Policies\Explorer" /v "NoRecentDocsHistory" /t REG_DWORD /d 1 /f
 REG ADD "%HKCU_CUR_VER%\Search"            /v "BingSearchEnabled"   /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CUR_VER%\AdvertisingInfo"   /v "Enabled"             /t REG_DWORD /d 0 /f
 REG ADD "%HKCU_CUR_VER%\AdvertisingInfo"   /v "Enabled"             /t REG_DWORD /d 0 /f
 
 
