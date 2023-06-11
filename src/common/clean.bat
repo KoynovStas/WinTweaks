@@ -20,7 +20,6 @@ DEL /f /s /q %windir%\*.bak                 >nul 2>&1
 :: delete folders
 SETLOCAL
 set list="%userprofile%\Favorites"
-set list=%list% "%userprofile%\Favorites"
 set list=%list% "%userprofile%\Contacts"
 set list=%list% "%userprofile%\Music"
 set list=%list% "%userprofile%\Pictures"
@@ -31,20 +30,22 @@ set list=%list% "%userprofile%\Videos"
 set list=%list% "%PUBLIC%\Libraries"
 
 set list=%list% "%LocalAppData%\Microsoft\Feeds"
-set list=%list% "%LocalAppData%\Microsoft\Feeds Cache"
 set list=%list% "%LocalAppData%\Microsoft\PlayReady"
+set list=%list% "%LocalAppData%\Microsoft\Feeds Cache"
 set list=%list% "%LocalAppData%\Microsoft\Media Player"
 set list=%list% "%LocalAppData%\Microsoft\Windows Mail"
 set list=%list% "%LocalAppData%\Microsoft\Windows Media"
 set list=%list% "%LocalAppData%\Microsoft\Windows Sidebar"
-set list=%list% "%LocalAppData%\Microsoft\Windows\GameExplorer"
 set list=%list% "%LocalAppData%\Microsoft\Windows\Ringtones"
+set list=%list% "%LocalAppData%\Microsoft\Windows\GameExplorer"
 
 set list=%list% "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Games"
-set list=%list% "%ProgramData%\Microsoft\Media Player"
 set list=%list% "%ProgramData%\Microsoft\Windows\GameExplorer"
 set list=%list% "%ProgramData%\Microsoft\Windows\Ringtones"
 set list=%list% "%ProgramData%\Microsoft\Windows NT\MSFax"
+set list=%list% "%ProgramData%\Microsoft\Media Player"
+set list=%list% "%ProgramData%\Microsoft\SmsRouter"
+set list=%list% "%ProgramData%\Microsoft\XboxLive"
 
 set list=%list% "%systemdrive%\PerfLogs"
 set list=%list% "%systemdrive%\Users\Public\Documents"
