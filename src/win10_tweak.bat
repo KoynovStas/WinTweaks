@@ -37,7 +37,6 @@ CALL %WIN10_DIR%\set_big_ico_on_control_panel.bat
 CALL %WIN10_DIR%\set_visual_effects.bat
 CALL %WIN10_DIR%\delete_components.bat
 CALL %WIN10_DIR%\start_menu_config.bat
-CALL %WIN10_DIR%\privacy_config.bat
 CALL %WIN10_DIR%\no_repair_after_update.bat
 CALL %WIN10_DIR%\no_lock_screen_camera.bat
 CALL %WIN10_DIR%\no_microsoft_feadback.bat
