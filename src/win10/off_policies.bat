@@ -20,7 +20,6 @@ REG ADD "%HKCU_POL_MS%\Internet Explorer\Main"                /v "RunOnceComplet
 REG ADD "%HKCU_POL_MS%\Internet Explorer\Main"                /v "RunOnceHasShown"                   /t REG_DWORD /d 1 /f
 REG ADD "%HKCU_POL_MS%\Messenger\Client"                      /v "CEIP"                              /t REG_DWORD /d 2 /f
 REG ADD "%HKCU_POL_MS%\WindowsMediaPlayer"                    /v "PreventMusicFileMetadataRetrieval" /t REG_DWORD /d 1 /f
-REG ADD "%HKCU_POL_WIN%\CurrentVersion\PushNotifications"     /v "NoToastApplicationNotification"    /t REG_DWORD /d 1 /f
 
 REG ADD "%HKLM_POL_MS%\Assistance\Client\1.0"                 /v "NoActiveHelp"                   /t REG_DWORD /d 1 /f
 REG ADD "%HKLM_POL_MS%\InputPersonalization"                  /v "AllowInputPersonalization"      /t REG_DWORD /d 0 /f
@@ -37,6 +36,8 @@ REG ADD "%HKLM_POL_MS%\SearchCompanion"                       /v "DisableContent
 REG ADD "%HKLM_POL_MS%\WMDRM"                                 /v "DisableOnline"                  /t REG_DWORD /d 1 /f
 REG ADD "%HKLM_POL_MS%\Windows Defender"                      /v "DisableAntiSpyware"             /t REG_DWORD /d 1 /f
 REG ADD "%HKLM_POL_MS%\Windows Defender\Real-Time Protection" /v "DisableBehaviorMonitoring"      /t REG_DWORD /d 1 /f
+
+REG ADD "%HKCU_POL_WIN%\CurrentVersion\PushNotifications"     /v "NoToastApplicationNotification" /t REG_DWORD /d 1 /f
 
 REG ADD "%HKLM_POL_WIN%\AdvertisingInfo"                      /v "DisabledByGroupPolicy"          /t REG_DWORD /d 1 /f
 REG ADD "%HKLM_POL_WIN%\AppCompat"                            /v "AITEnable"                      /t REG_DWORD /d 0 /f
@@ -55,8 +56,6 @@ REG ADD "%HKLM_POL_WIN%\AppPrivacy"                           /v "LetAppsAccessM
 REG ADD "%HKLM_POL_WIN%\AppPrivacy"                           /v "LetAppsAccessRadios"            /t REG_DWORD /d 2 /f
 REG ADD "%HKLM_POL_WIN%\AppPrivacy"                           /v "LetAppsAccessTrustedDevices"    /t REG_DWORD /d 2 /f
 REG ADD "%HKLM_POL_WIN%\AppPrivacy"                           /v "LetAppsSyncWithDevices"         /t REG_DWORD /d 2 /f
-REG ADD "%HKLM_POL_WIN%\CloudContent"                         /v "DisableSoftLanding"             /t REG_DWORD /d 1 /f
-REG ADD "%HKLM_POL_WIN%\CloudContent"                         /v "DisableWindowsConsumerFeatures" /t REG_DWORD /d 1 /f
 REG ADD "%HKLM_POL_WIN%\CurrentVersion\Explorer\AutoComplete" /v "AutoSuggest"                    /t REG_SZ /d "no" /f
 REG ADD "%HKLM_POL_WIN%\DataCollection"                       /v "AllowTelemetry"                 /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_POL_WIN%\FileHistory"                          /v "Disabled"                       /t REG_DWORD /d 1 /f
@@ -74,6 +73,21 @@ REG ADD "%HKLM_POL_WIN%\Windows Error Reporting"              /v "Disabled"     
 REG ADD "%HKLM_POL_WIN%\Windows Error Reporting"              /v "DontSendAdditionalData"         /t REG_DWORD /d 1 /f
 REG ADD "%HKLM_POL_WIN%\Windows Search"                       /v "AllowCortana"                   /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_POL_WIN%\WindowsUpdate"                        /v "DeferUpgrade"                   /t REG_DWORD /d 0 /f
+
+
+echo Disable CloudContent:
+REG ADD "%HKLM_POL_WIN%\CloudContent" /v "DisableSoftLanding"                             /t REG_DWORD /d 1 /f
+REG ADD "%HKLM_POL_WIN%\CloudContent" /v "DisableThirdPartySuggestions"                   /t REG_DWORD /d 1 /f
+REG ADD "%HKLM_POL_WIN%\CloudContent" /v "DisableWindowsConsumerFeatures"                 /t REG_DWORD /d 1 /f
+
+REG ADD "%HKCU_POL_WIN%\CloudContent" \v "ConfigureWindowsSpotlight"                      /t REG_DWORD /d 2 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" \v "IncludeEnterpriseSpotlight"                     /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableThirdPartySuggestions"                   /t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableTailoredExperiencesWithDiagnosticData"   /t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableWindowsSpotlightFeatures"                /t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableWindowsSpotlightWindowsWelcomeExperience"/t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableWindowsSpotlightOnActionCenter"          /t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableWindowsSpotlightOnSettings"              /t REG_DWORD /d 1 /f
 
 
 echo Disable Password reveal button:
