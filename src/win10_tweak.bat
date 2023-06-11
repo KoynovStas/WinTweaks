@@ -50,6 +50,7 @@ CALL %WIN10_DIR%\off_services.bat
 CALL %WIN10_DIR%\off_policies.bat
 CALL %WIN10_DIR%\off_spynet.bat
 CALL %WIN10_DIR%\off_sync.bat
+CALL %WIN10_DIR%\off_cdm.bat
 
 
 CALL %COMMON_DIR%\del_search_indexes.bat
