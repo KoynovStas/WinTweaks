@@ -29,7 +29,6 @@ REG ADD "%HKLM_CUR_VER%\AdvertisingInfo"         /v Enabled                     
 
 REG ADD "%HKCU_CUR_VER%\Search"            /v "CortanaEnabled"      /t REG_DWORD /d 0 /f
 REG ADD "%HKCU_CUR_VER%\Policies\Explorer" /v "NoRecentDocsHistory" /t REG_DWORD /d 1 /f
-REG ADD "%HKCU_CUR_VER%\Search"            /v "BingSearchEnabled"   /t REG_DWORD /d 0 /f
 REG ADD "%HKCU_CUR_VER%\AdvertisingInfo"   /v "Enabled"             /t REG_DWORD /d 0 /f
 
 
