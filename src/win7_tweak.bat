@@ -5,8 +5,8 @@ echo ---- Windows 7 tweaks ----
 
 
 :: set const
-set COMMON_DIR=.\common
-set WIN7_DIR=.\win7
+set COMMON_DIR=%~dp0.\common
+set WIN7_DIR=%~dp0.\win7
 
 
 

@@ -5,8 +5,8 @@ echo ---- Windows 10 tweaks ----
 
 
 :: set const
-set COMMON_DIR=.\common
-set WIN10_DIR=.\win10
+set COMMON_DIR=%~dp0.\common
+set WIN10_DIR=%~dp0.\win10
 
 
 
