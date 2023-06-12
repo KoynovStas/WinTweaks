@@ -95,6 +95,7 @@ if %AUOptions%==0 set mode=3
 
 REG ADD "%HKLM_SERVICES%\wuauserv" /v "Start" /t REG_DWORD /d %mode% /f
 REG ADD "%HKLM_SERVICES%\UsoSvc"   /v "Start" /t REG_DWORD /d %mode% /f
+REG ADD "%HKLM_SERVICES%\DoSvc"    /v "Start" /t REG_DWORD /d %mode% /f
 
 REG ADD "%HKLM_AU%" /v "NoAutoUpdate" /t REG_DWORD /d 1 /f
 
@@ -116,11 +117,14 @@ REG ADD "%HKLM_AU%" /v "ScheduledInstallDay"           /t REG_DWORD /d %InstallD
 REG ADD "%HKLM_AU%" /v "ScheduledInstallTime"          /t REG_DWORD /d %InstallTime% /f
 REG ADD "%HKLM_AU%" /v "NoAutoRebootWithLoggedOnUsers" /t REG_DWORD /d 1 /f
 
-schtasks /Change /TN "Microsoft\Windows\WindowsUpdate\Scheduled Start" /ENABLE
+schtasks /Change /TN "\Microsoft\Windows\WindowsUpdate\Scheduled Start"    /ENABLE
+schtasks /Change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Scan" /ENABLE
+schtasks /Change /TN "\Microsoft\Windows\UpdateOrchestrator\Schedule Work" /ENABLE
 
 REG ADD "%HKLM_SERVICES%\wuauserv" /v "Start" /t REG_DWORD /d 2 /f
 REG ADD "%HKLM_SERVICES%\bits"     /v "Start" /t REG_DWORD /d 2 /f
 REG ADD "%HKLM_SERVICES%\UsoSvc"   /v "Start" /t REG_DWORD /d 2 /f
+REG ADD "%HKLM_SERVICES%\DoSvc"    /v "Start" /t REG_DWORD /d 2 /f
 
 
 echo:
