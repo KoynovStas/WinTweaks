@@ -12,6 +12,7 @@ set list=%list% AppMgmt
 set list=%list% aspnet_state
 set list=%list% AxInstSV
 set list=%list% BDESVC
+set list=%list% BITS
 set list=%list% Browser
 set list=%list% bthserv
 set list=%list% CertPropSvc
