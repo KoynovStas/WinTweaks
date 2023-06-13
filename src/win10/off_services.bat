@@ -97,6 +97,7 @@ set list=%list% W32Time
 set list=%list% WaaSMedicSvc
 set list=%list% wbengine
 set list=%list% WbioSrvc
+set list=%list% wcncsvc
 set list=%list% WebClient
 set list=%list% Wecsvc
 set list=%list% wercplsupport

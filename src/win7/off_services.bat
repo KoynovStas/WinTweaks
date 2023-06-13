@@ -79,6 +79,7 @@ set list=%list% VSS
 set list=%list% W32Time
 set list=%list% wbengine
 set list=%list% WbioSrvc
+set list=%list% wcncsvc
 set list=%list% WcsPlugInService
 set list=%list% WebClient
 set list=%list% Wecsvc
