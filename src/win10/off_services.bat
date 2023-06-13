@@ -78,6 +78,7 @@ set list=%list% SessionEnv
 set list=%list% SharedAccess
 set list=%list% SNMPTRAP
 set list=%list% Spooler
+set list=%list% SSDPSRV
 set list=%list% stisvc
 set list=%list% StorSvc
 set list=%list% swprv
