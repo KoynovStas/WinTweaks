@@ -30,6 +30,7 @@ CALL %COMMON_DIR%\off_tasks.bat
 CALL %COMMON_DIR%\off_log.bat
 CALL %COMMON_DIR%\ie_tweak.bat
 CALL %COMMON_DIR%\ssd_tweak.bat
+CALL %COMMON_DIR%\Libraries_Feature\off_libraries_feature.bat
 
 
 CALL %WIN7_DIR%\set_big_ico_on_control_panel.bat

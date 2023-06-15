@@ -30,6 +30,7 @@ CALL %COMMON_DIR%\off_tasks.bat
 CALL %COMMON_DIR%\off_log.bat
 CALL %COMMON_DIR%\ie_tweak.bat
 CALL %COMMON_DIR%\ssd_tweak.bat
+CALL %COMMON_DIR%\Libraries_Feature\off_libraries_feature.bat
 
 
 CALL %WIN10_DIR%\set_win_auto_update_options.bat -1
