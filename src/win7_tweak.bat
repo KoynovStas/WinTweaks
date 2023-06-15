@@ -18,7 +18,6 @@ echo:
 CALL %COMMON_DIR%\auto_chcp_UTF8.bat
 CALL %COMMON_DIR%\off_uac.bat
 CALL %COMMON_DIR%\off_autoplay.bat
-CALL %COMMON_DIR%\off_hibernate.bat
 CALL %COMMON_DIR%\desktop_tweak.bat
 CALL %COMMON_DIR%\power_config.bat
 CALL %COMMON_DIR%\set_pc_name.bat
@@ -37,6 +36,7 @@ CALL %WIN7_DIR%\set_big_ico_on_control_panel.bat
 CALL %WIN7_DIR%\set_visual_effects.bat
 CALL %WIN7_DIR%\start_menu_config.bat
 CALL %WIN7_DIR%\delete_components.bat
+CALL %WIN7_DIR%\off_hibernate.bat
 CALL %WIN7_DIR%\off_services.bat
 
 

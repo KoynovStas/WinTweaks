@@ -18,7 +18,6 @@ echo:
 CALL %COMMON_DIR%\auto_chcp_UTF8.bat
 CALL %COMMON_DIR%\off_uac.bat
 CALL %COMMON_DIR%\off_autoplay.bat
-CALL %COMMON_DIR%\off_hibernate.bat
 CALL %COMMON_DIR%\desktop_tweak.bat
 CALL %COMMON_DIR%\power_config.bat
 CALL %COMMON_DIR%\set_pc_name.bat
@@ -46,6 +45,7 @@ CALL %WIN10_DIR%\off_notification_center.bat
 CALL %WIN10_DIR%\off_remote_assistance.bat
 CALL %WIN10_DIR%\off_beta_features.bat
 CALL %WIN10_DIR%\off_telemetry.bat
+CALL %WIN10_DIR%\off_hibernate.bat
 CALL %WIN10_DIR%\off_services.bat
 CALL %WIN10_DIR%\off_policies.bat
 CALL %WIN10_DIR%\off_spynet.bat
