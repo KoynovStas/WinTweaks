@@ -36,6 +36,7 @@ CALL %COMMON_DIR%\Libraries_Feature\off_libraries_feature.bat
 CALL %WIN10_DIR%\set_win_auto_update_options.bat -1
 CALL %WIN10_DIR%\set_big_ico_on_control_panel.bat
 CALL %WIN10_DIR%\set_visual_effects.bat
+CALL %WIN10_DIR%\theme\set_theme.bat
 CALL %WIN10_DIR%\delete_components.bat
 CALL %WIN10_DIR%\start_menu_config.bat
 CALL %WIN10_DIR%\no_repair_after_update.bat
