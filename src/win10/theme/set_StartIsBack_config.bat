@@ -2,5 +2,5 @@
 @echo off
 
 echo Set my config for StartIsBack:
-regedit /s StartIsBack.reg
+regedit /s %~dp0.\StartIsBack.reg
 echo:
