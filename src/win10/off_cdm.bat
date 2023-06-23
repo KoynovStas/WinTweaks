@@ -11,27 +11,27 @@ echo Disable ContentDeliveryManager:
 
 REG ADD "%HKLM_CUR_VER%\DeliveryOptimization\Config" /v "DownloadMode" /t REG_DWORD /d 0 /f
 
-REG ADD "%HKCU_CDM%" /v "SoftLandingEnabled"              /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "FeatureManagementEnabled"        /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "OemPreInstalledAppsEnabled"      /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "PreInstalledAppsEnabled"         /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "RotatingLockScreenEnabled"       /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "RotatingLockScreenOverlayEnabled"/t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SoftLandingEnabled"              /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SystemPaneSuggestionsEnabled"    /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SubscribedContentEnabled"        /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "ContentDeliveryAllowed"          /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SilentInstalledAppsEnabled"      /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "PreInstalledAppsEverEnabled"     /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "RemediationRequired"             /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SubscribedContent-338387Enabled" /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SubscribedContent-338388Enabled" /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SubscribedContent-338389Enabled" /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SubscribedContent-310093Enabled" /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SubscribedContent-338393Enabled" /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SubscribedContent-314563Enabled" /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SubscribedContent-353698Enabled" /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_CDM%" /v "SubscribedContent-353694Enabled" /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SoftLandingEnabled"               /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "FeatureManagementEnabled"         /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "OemPreInstalledAppsEnabled"       /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "PreInstalledAppsEnabled"          /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "RotatingLockScreenEnabled"        /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "RotatingLockScreenOverlayEnabled" /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SoftLandingEnabled"               /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SystemPaneSuggestionsEnabled"     /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SubscribedContentEnabled"         /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "ContentDeliveryAllowed"           /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SilentInstalledAppsEnabled"       /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "PreInstalledAppsEverEnabled"      /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "RemediationRequired"              /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SubscribedContent-338387Enabled"  /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SubscribedContent-338388Enabled"  /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SubscribedContent-338389Enabled"  /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SubscribedContent-310093Enabled"  /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SubscribedContent-338393Enabled"  /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SubscribedContent-314563Enabled"  /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SubscribedContent-353698Enabled"  /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_CDM%" /v "SubscribedContent-353694Enabled"  /t REG_DWORD /d 0 /f
 
 REG ADD "%HKCU_CDM%\SuggestedApps" /v "46928bounde.EclipseManager_a5h4egax66k6y"                     /t REG_DWORD /d 0 /f
 REG ADD "%HKCU_CDM%\SuggestedApps" /v "ActiproSoftwareLLC.562882FEEB491_24pqs290vpjk0"               /t REG_DWORD /d 0 /f

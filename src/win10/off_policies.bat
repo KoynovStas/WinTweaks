@@ -76,18 +76,18 @@ REG ADD "%HKLM_POL_WIN%\WindowsUpdate"                        /v "DeferUpgrade" 
 
 
 echo Disable CloudContent:
-REG ADD "%HKLM_POL_WIN%\CloudContent" /v "DisableSoftLanding"                             /t REG_DWORD /d 1 /f
-REG ADD "%HKLM_POL_WIN%\CloudContent" /v "DisableThirdPartySuggestions"                   /t REG_DWORD /d 1 /f
-REG ADD "%HKLM_POL_WIN%\CloudContent" /v "DisableWindowsConsumerFeatures"                 /t REG_DWORD /d 1 /f
+REG ADD "%HKLM_POL_WIN%\CloudContent" /v "DisableSoftLanding"                              /t REG_DWORD /d 1 /f
+REG ADD "%HKLM_POL_WIN%\CloudContent" /v "DisableThirdPartySuggestions"                    /t REG_DWORD /d 1 /f
+REG ADD "%HKLM_POL_WIN%\CloudContent" /v "DisableWindowsConsumerFeatures"                  /t REG_DWORD /d 1 /f
 
-REG ADD "%HKCU_POL_WIN%\CloudContent" \v "ConfigureWindowsSpotlight"                      /t REG_DWORD /d 2 /f
-REG ADD "%HKCU_POL_WIN%\CloudContent" \v "IncludeEnterpriseSpotlight"                     /t REG_DWORD /d 0 /f
-REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableThirdPartySuggestions"                   /t REG_DWORD /d 1 /f
-REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableTailoredExperiencesWithDiagnosticData"   /t REG_DWORD /d 1 /f
-REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableWindowsSpotlightFeatures"                /t REG_DWORD /d 1 /f
-REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableWindowsSpotlightWindowsWelcomeExperience"/t REG_DWORD /d 1 /f
-REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableWindowsSpotlightOnActionCenter"          /t REG_DWORD /d 1 /f
-REG ADD "%HKCU_POL_WIN%\CloudContent" \v "DisableWindowsSpotlightOnSettings"              /t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" /v "ConfigureWindowsSpotlight"                       /t REG_DWORD /d 2 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" /v "IncludeEnterpriseSpotlight"                      /t REG_DWORD /d 0 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" /v "DisableThirdPartySuggestions"                    /t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" /v "DisableTailoredExperiencesWithDiagnosticData"    /t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" /v "DisableWindowsSpotlightFeatures"                 /t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" /v "DisableWindowsSpotlightWindowsWelcomeExperience" /t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" /v "DisableWindowsSpotlightOnActionCenter"           /t REG_DWORD /d 1 /f
+REG ADD "%HKCU_POL_WIN%\CloudContent" /v "DisableWindowsSpotlightOnSettings"               /t REG_DWORD /d 1 /f
 
 
 echo Disable Password reveal button:
