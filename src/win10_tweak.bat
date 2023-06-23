@@ -49,6 +49,7 @@ CALL %WIN10_DIR%\off_remote_assistance.bat
 CALL %WIN10_DIR%\off_beta_features.bat
 CALL %WIN10_DIR%\off_telemetry.bat
 CALL %WIN10_DIR%\off_hibernate.bat
+CALL %WIN10_DIR%\off_swapfile.bat
 CALL %WIN10_DIR%\off_services.bat
 CALL %WIN10_DIR%\off_policies.bat
 CALL %WIN10_DIR%\off_spynet.bat
