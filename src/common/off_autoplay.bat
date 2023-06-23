@@ -28,6 +28,7 @@ set list=%list% PlayVideoFilesOnArrival
 set list=%list% ShowPicturesOnArrival
 ::only for Windows 10
 set list=%list% CameraAlternate
+set list=%list% CameraAlternate\ShowPicturesOnArrival
 set list=%list% StorageOnArrival
 
 
