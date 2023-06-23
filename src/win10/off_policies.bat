@@ -65,7 +65,7 @@ REG ADD "%HKLM_POL_WIN%\LocationAndSensors"                   /v "DisableLocatio
 REG ADD "%HKLM_POL_WIN%\LocationAndSensors"                   /v "DisableWindowsLocationProvider" /t REG_DWORD /d 1 /f
 REG ADD "%HKLM_POL_WIN%\Maps"                                 /v "AutoDownloadAndUpdateMapData"   /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_POL_WIN%\NetworkConnectivityStatusIndicator"   /v "NoActiveProbe"                  /t REG_DWORD /d 1 /f
-REG ADD "%HKLM_POL_WIN%\Personalization"                      /v "NoLockScreen"                   /t REG_DWORD /d 1 /f
+REG ADD "%HKLM_POL_WIN%\Personalization"                      /v "NoLockScreen"                   /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_POL_WIN%\System"                               /v "DisableHHDEP"                   /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_POL_WIN%\System"                               /v "EnableSmartScreen"              /t REG_DWORD /d 0 /f
 REG ADD "%HKLM_POL_WIN%\Windows Error Reporting"              /v "AutoApproveOSDumps"             /t REG_DWORD /d 0 /f
