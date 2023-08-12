@@ -65,7 +65,8 @@ set list=%list% pla
 set list=%list% PNRPAutoReg
 set list=%list% PNRPsvc
 set list=%list% RasAuto
-set list=%list% RasMan
+::RasMan need for Windows VPN Client
+::set list=%list% RasMan
 set list=%list% RemoteAccess
 set list=%list% RemoteRegistry
 set list=%list% RmSvc
@@ -87,7 +88,8 @@ set list=%list% StorSvc
 set list=%list% swprv
 set list=%list% SysMain
 set list=%list% TabletInputService
-set list=%list% TapiSrv
+::TapiSrv need for Windows VPN Client
+::set list=%list% TapiSrv
 set list=%list% TermService
 set list=%list% TrkWks
 set list=%list% tzautoupdate
