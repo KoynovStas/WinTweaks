@@ -1,6 +1,7 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\SOFTWARE\StartIsBack]
+"CurrentVersion"="2.9.17"
 "WinBuild"=dword:00004a64
 "ModernIconsColorized"=dword:00000001
 "WelcomeShown"=dword:00000002
@@ -62,39 +63,12 @@ Windows Registry Editor Version 5.00
 "ModernIconsUnplated"=dword:00000000
 "ModernIconsBadgesStartMenu"=dword:00000001
 "WinLangID"=dword:00000419
-"CustomColors"="ColorA=C8A29B
-ColorB=FFFFFFFF
-ColorC=FFFFFFFF
-ColorD=FFFFFFFF
-ColorE=FFFFFFFF
-ColorF=FFFFFFFF
-ColorG=FFFFFFFF
-ColorH=FFFFFFFF
-ColorI=FFFFFFFF
-ColorJ=FFFFFFFF
-ColorK=FFFFFFFF
-ColorL=FFFFFFFF
-ColorM=FFFFFFFF
-ColorN=FFFFFFFF
-ColorO=FFFFFFFF
-ColorP=FFFFFFFF
-"
 "TaskbarCenterIcons"=dword:00000000
 "TaskbarTranslucentEffect"=dword:00000000
-"TaskbarAlpha"=dword:0000002a
+"TaskbarAlpha"=dword:00000043
 "TaskbarBlur"=dword:00000001
 "TaskbarColor"=dword:00a66a60
 "StartMenuColor"=dword:00c8a29b
 "StartMenuBlur"=dword:00000000
-"StartMenuAlpha"=dword:0000008c
+"StartMenuAlpha"=dword:0000008b
 "SettingsVersion"=dword:00000005
-
-
-[HKEY_CURRENT_USER\SOFTWARE\StartIsBack\ShutdownChoices]
-@=dword:00000002
-"Смена пользователя"=dword:00000100
-"Выход"=dword:00000001
-"Блокировка"=dword:00000200
-"Завершение работы"=dword:00000002
-"Перезагрузка"=dword:00000004
-
