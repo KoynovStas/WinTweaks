@@ -1,0 +1,38 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes]
+"InstallVisualStyleColor"="NormalColor"
+"InstallVisualStyleSize"="NormalSize"
+"ThemeChangesDesktopIcons"=dword:00000001
+"ThemeChangesMousePointers"=dword:00000001
+"CurrentTheme"="%LOCALAPPDATA%\\Microsoft\\Windows\\Themes\\Custom.theme"
+"WallpaperSetFromTheme"=dword:00000001
+"ColorSetFromTheme"=dword:00000001
+"SetupVersion"="10"
+
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\HighContrast]
+"Pre-High Contrast Scheme"="%LOCALAPPDATA%\\Microsoft\\Windows\\Themes\\Custom.theme"
+
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"ColorPrevalence"=dword:00000000
+"EnableTransparency"=dword:00000000
+"SystemUsesLightTheme"=dword:00000000
+"AppsUseLightTheme"=dword:00000001
+
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"AutoColorization"=dword:00000000
+
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Accent]
+"AccentPalette"=hex:9f,b4,d1,00,8a,9d,b6,00,6e,7d,91,00,51,5c,6b,00,3b,44,52,\
+  00,26,2f,3b,00,1c,23,2e,00,ef,69,50,00
+"StartColorMenu"=dword:ff52443b
+"AccentColorMenu"=dword:ff6b5c51
+
+
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
+"AccentColor"=dword:ff6b5c51

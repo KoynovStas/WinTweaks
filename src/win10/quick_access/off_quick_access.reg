@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+; Disable 'Pin to Quick Access' Context Menu in Windows 10 & 11
+
+[-HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\pintohome]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\pintohome]
+
+[-HKEY_CLASSES_ROOT\Folder\shell\pintohome]
+
+[-HKEY_CLASSES_ROOT\Network\shell\pintohome]
+
+
+
+; Hide Quick Access on Explorer
+
+[HKEY_CLASSES_ROOT\CLSID\{679f85cb-0220-4080-b29b-5540cc05aab6}\ShellFolder]
+"Attributes"=dword:a0600000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"HubMode"=dword:00000001
