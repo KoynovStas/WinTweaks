@@ -10,21 +10,19 @@ SETLOCAL enableDelayedExpansion
 set list=AJRouter
 set list=%list% ALG
 set list=%list% AppIDSvc
-rem Appinfo - need for WSL and Simple User
-set list=%list% Appinfo
+::set list=%list% Appinfo  & ::Appinfo - need for WSL and Simple User
 set list=%list% AppMgmt
 set list=%list% AssignedAccessManagerSvc
 set list=%list% autotimesvc
 set list=%list% AxInstSV
 set list=%list% BDESVC
-::set list=%list% bits  rem see set_win_auto_update_options.bat
+::set list=%list% bits   & ::see set_win_auto_update_options.bat
 set list=%list% BTAGService
 set list=%list% BthAvctpSvc
 set list=%list% bthserv
 set list=%list% CDPSvc
 set list=%list% CertPropSvc
-rem ClipSVC - need for WSL and Store
-set list=%list% ClipSVC
+set list=%list% ClipSVC  & ::ClipSVC - need for WSL and Store
 set list=%list% cloudidsvc
 set list=%list% COMSysApp
 set list=%list% CscService
@@ -33,7 +31,7 @@ set list=%list% diagsvc
 set list=%list% DiagTrack
 set list=%list% DispBrokerDesktopSvc
 set list=%list% dmwappushservice
-::set list=%list% DoSvc  rem see set_win_auto_update_options.bat
+::set list=%list% DoSvc  & ::see set_win_auto_update_options.bat
 set list=%list% dot3svc
 set list=%list% DPS
 set list=%list% DsSvc
@@ -49,8 +47,7 @@ set list=%list% fhsvc
 set list=%list% KeyIso
 set list=%list% KtmRm
 set list=%list% lfsvc
-rem mpssvc - need for WSL and Simple User
-set list=%list% mpssvc
+set list=%list% mpssvc & ::mpssvc - need for WSL and Simple User
 set list=%list% MSDTC
 set list=%list% MSiSCSI
 set list=%list% NcbService
@@ -65,8 +62,7 @@ set list=%list% pla
 set list=%list% PNRPAutoReg
 set list=%list% PNRPsvc
 set list=%list% RasAuto
-::RasMan need for Windows VPN Client
-::set list=%list% RasMan
+::set list=%list% RasMan  & ::RasMan need for Windows VPN Client
 set list=%list% RemoteAccess
 set list=%list% RemoteRegistry
 set list=%list% RmSvc
@@ -88,14 +84,13 @@ set list=%list% StorSvc
 set list=%list% swprv
 set list=%list% SysMain
 set list=%list% TabletInputService
-::TapiSrv need for Windows VPN Client
-::set list=%list% TapiSrv
+::set list=%list% TapiSrv  & ::TapiSrv need for Windows VPN Client
 set list=%list% TermService
 set list=%list% TrkWks
 set list=%list% tzautoupdate
 set list=%list% UmRdpService
 set list=%list% upnphost
-::set list=%list% UsoSvc   rem see set_win_auto_update_options.bat
+::set list=%list% UsoSvc   & ::see set_win_auto_update_options.bat
 set list=%list% VaultSvc
 set list=%list% VSS
 set list=%list% W32Time
@@ -117,7 +112,7 @@ set list=%list% WpcMonSvc
 set list=%list% WPDBusEnum
 set list=%list% wscsvc
 set list=%list% WSearch
-::set list=%list% wuauserv rem see set_win_auto_update_options.bat
+::set list=%list% wuauserv & ::see set_win_auto_update_options.bat
 set list=%list% WwanSvc
 
 
